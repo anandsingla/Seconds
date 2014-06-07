@@ -1,0 +1,40 @@
+ <form name="birthday">
+Date<select name="day" size="1">
+<script type="text/javascript">
+for(var j=1;j<32;j++)
+document.write("<option value="+j+">"+j+"</option>");
+</script></select> 
+Month<select name="month" size="1">
+<script type="text/javascript">
+for(var i=1;i<13;i++)
+document.write("<option value="+i+">"+i+"</option>");
+</script></select> 
+Year<select name="year" size="1">
+<script type="text/javascript">
+for(var k=startyear;k<endyear;k++)
+document.write("<option value="+k+">"+k+"</option>");
+</script></select>
+<input name="start" onclick="calage()" value="Calculate" type="button"><br>
+<input name="age" size="40" value="Result"><br>
+You have been living for:<br>
+<table style="border:solid green 1px"> 
+<tr>
+<td>In months:</td>
+<td><input name="months" size="30"></td>
+</tr> 
+<tr>
+<td>In days:</td>
+<td><input name="daa" size="30"></td>
+</tr> 
+<tr>
+<td>In hours:</td>
+<td><input name="hours" size="30"></td>
+</tr> 
+<tr>
+<td>In minutes:</td><td><input name="min" size="30"></td>
+</tr>
+<tr>
+<td colspan=2>Your next birthday will be in:</td>
+</tr> 
+<tr>
+<td colspan=2><input name="nbday" size="40"></table> </form> 
